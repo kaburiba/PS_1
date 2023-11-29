@@ -26,20 +26,20 @@ class MyScene extends Phaser.Scene {
     
   // 毎フレーム実行される繰り返し処理
     update() {
-        // if (this.player.x >= D_WIDTH - 100) this.player_direction = -1;
-        // if (this.player.x <= 110) this.player_direction = 1;
+        if (this.player.x >= D_WIDTH - 100) this.player_direction = -1;
+        if (this.player.x <= 110) this.player_direction = 1;
 
-        // if (this.player_direction == 1) {
-        //     this.player.x += 6;
-        //     this.player.y += 6;
-        //     // 回転角度を更新
-        //     this.player.angle += 5;
-        // } else {
-        //     this.player.x -= 6;
-        //     this.player.y -= 6;
-        //     // 回転角度を更新
-        //     this.player.angle += 5;
-        // }
+        if (this.player_direction == 1) {
+            this.player.x += 6;
+            this.player.y += 6;
+            // 回転角度を更新
+            // this.player.angle += 5;
+        } else {
+            this.player.x -= 6;
+            this.player.y -= 6;
+            // 回転角度を更新
+            // this.player.angle += 5;
+        }
                 
     
     }
