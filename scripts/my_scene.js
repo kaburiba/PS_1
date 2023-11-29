@@ -33,12 +33,12 @@ class MyScene extends Phaser.Scene {
             this.player.x += 6;
             this.player.y += 6;
             // 回転角度を更新
-            // this.player.angle += 5;
+            this.player.angle += 5;
         } else {
             this.player.x -= 6;
             this.player.y -= 6;
             // 回転角度を更新
-            // this.player.angle += 5;
+            this.player.angle += 5;
         }
                 
     
